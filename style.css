@@ -1,0 +1,99 @@
+/* Reset default */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background: url('https://images.unsplash.com/photo-1529101091764-c3526daf38fe?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+  backdrop-filter: blur(4px);
+  color: #fff;
+  height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  z-index: 1000;
+}
+
+.navbar.scrolled {
+  background-color: #ff5733;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 6px 12px;
+  transition: color 0.3s, background 0.3s;
+}
+
+.nav-links a:hover {
+  color: #000;
+  background: #ffff33;
+  border-radius: 5px;
+}
+
+.login-btn .btn {
+  background-color: #ffcc00;
+  padding: 6px 15px;
+  border-radius: 20px;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.login-btn .btn:hover {
+  background-color: #fff200;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  border-radius: 15px;
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.3em;
+}
